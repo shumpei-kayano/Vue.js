@@ -10,13 +10,14 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>クリックしたらカウントアップ</h2>
     <div id="app">
-        <p>{{ count }}回</p>
+        <p> {{ count }}回</p>
         <button v-on:click="countUp">カウント</button>
     </div>
     <script>
         new Vue({
-            el:"app",
+            el:"#app",
             data: {
                 count:0
             },
