@@ -10,6 +10,7 @@
 	<body>
 		<h2>複数の選択を、配列にする例</h2>
 		<div id="app">
+			<!-- v-modelで複数の選択を、配列にする例 multipleを指定する -->
 			<select v-model="myColor" multiple style="width:150px">
 				<option>red</option>
 				<option>green</option>
@@ -24,7 +25,7 @@
 			new Vue({
 				el: '#app',
 				data: {
-					myColor: []
+					myColor: [] //myColorは配列
 				}
 			})
 		</script>
