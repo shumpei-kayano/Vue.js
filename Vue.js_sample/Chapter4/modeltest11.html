@@ -10,6 +10,7 @@
 	<body>
 		<h2>入力を自動的に数値に変換する例</h2>
 		<div id="app">
+			<!-- v-modelで入力を自動的に数値に変換する例 修飾子にnumberを指定する -->
 			<input v-model.number="myNumber" type="number">
 			<p>100を足して表示「{{ 100 + myNumber }}」</p>
 		</div>
