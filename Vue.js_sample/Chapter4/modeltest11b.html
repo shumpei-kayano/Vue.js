@@ -10,7 +10,9 @@
 	<body>
 		<h2>入力を自動的に数値に変換しない例</h2>
 		<div id="app">
+			<!-- 入力を自動的に数値に変換しない例 修飾子にnumberを指定しない場合 -->
 			<input v-model="myNumber" type="number">
+			<!-- 文字列連結の+になる -->
 			<p>100を足して表示「{{ 100 + myNumber }}」</p>
 		</div>
 
