@@ -9,14 +9,17 @@
 	
 	<body>
 		<h2>クリックしたらカウントアップ</h2>
+		<!-- Vue.jsと繋がる要素をid属性で指定する -->
 		<div id="app">
+			
 			<p> {{count}}回</p>
 			<button v-on:click="countUp">カウント</button>
 		</div>
 		
 		<script>
+		// Vueインスタンス
 		new Vue({
-			el: "#app",
+			el: "#app", //id属性と繋げる
 			data: {
 				count:0
 			},
