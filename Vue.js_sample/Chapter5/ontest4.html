@@ -10,7 +10,11 @@
 	<body>
 		<h2>エンターキーを押したら、アラートを表示する例</h2>
 		<div id="app">
+			<!-- enterキーが入力された時 -->
+			<!-- v-on:keyup.キー修飾子="メソッド名" -->
+			<!-- v-modelで入力とVueインスタンスをつなぐ -->
 			<input v-on:keyup.enter="showAlert" v-model="myText">
+			<!-- マスタッシュはdataを表示しているだけ -->
 			<p>{{ myText }}</p>
 		</div>
 
